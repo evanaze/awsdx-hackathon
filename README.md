@@ -1,1 +1,1 @@
-# awsdx-hackathon
+# AWS Data Exchange Hackathon 2022
