@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "awsdx-hackathon"
+version = "0.1.0"
+description = "My submission for the AWSDX 2022 hackathon"
+authors = ["Evan Azevedo <evan@azevedo.com>"]
+readme = "README.md"
+packages = [{include = "awsdx_hackathon"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
