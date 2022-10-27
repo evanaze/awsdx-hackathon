@@ -8,6 +8,8 @@ packages = [{include = "awsdx_hackathon"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
+duckdb = "^0.5.1"
+pandas = "^1.5.1"
 
 
 [build-system]
