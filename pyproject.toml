@@ -10,6 +10,8 @@ packages = [{include = "awsdx_hackathon"}]
 python = "^3.10"
 duckdb = "^0.5.1"
 pandas = "^1.5.1"
+openpyxl = "^3.0.10"
+pyarrow = "^10.0.0"
 
 
 [build-system]
