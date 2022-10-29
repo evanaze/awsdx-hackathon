@@ -1,0 +1,7 @@
+version: 1
+default_environment: dev
+project_id: 64b12a98-c86c-4601-b621-baee7919d86f
+environments:
+- name: dev
+- name: staging
+- name: prod
