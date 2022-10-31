@@ -1,6 +1,6 @@
 version: 1
 default_environment: dev
-project_id: 64b12a98-c86c-4601-b621-baee7919d86f
+project_id: 1bfa6281-7a00-412e-82cf-e2cacfc30dc9
 environments:
 - name: dev
 - name: staging
