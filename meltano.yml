@@ -14,6 +14,8 @@ plugins:
   - name: target-duckdb
     variant: jwills
     pip_url: target-duckdb~=0.4
+    config:
+      filepath: data/duck.db
   transformers:
   - name: dbt-duckdb
     variant: jwills
