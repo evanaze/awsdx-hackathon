@@ -3743,7 +3743,7 @@
     {
       "tap_stream_id": "zillow_home_idx",
       "key_properties": [
-        "RegionID"
+        "regionid"
       ],
       "schema": {
         "properties": {

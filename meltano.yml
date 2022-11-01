@@ -30,7 +30,7 @@ plugins:
             pattern: Zip_zhvi_uc_sfrcondo_tier_0.33_0.67_sm_sa_month.csv
             format: csv
             start_date: "2017-05-01T00:00:00Z"
-            key_properties: [RegionID]
+            key_properties: [regionid]
   loaders:
     - name: target-duckdb
       variant: jwills
