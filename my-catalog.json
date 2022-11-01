@@ -1,0 +1,3678 @@
+{
+  "streams": [
+    {
+      "tap_stream_id": "opp_atlas",
+      "key_properties": [
+        "tract"
+      ],
+      "schema": {
+        "properties": {
+          "tract": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "name": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "kfr_ra_gp_pall": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_ra_gp_pall_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_ra_gp_p100": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_ra_gp_p100_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_ra_gp_p75": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_ra_gp_p75_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_ra_gp_p25": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_ra_gp_p25_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_ra_gp_p1": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_ra_gp_p1_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_ra_gp_p50": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_ra_gp_p50_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_ra_gf_pall": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_ra_gf_pall_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_ra_gf_p100": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_ra_gf_p100_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_ra_gf_p75": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_ra_gf_p75_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_ra_gf_p25": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_ra_gf_p25_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_ra_gf_p1": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_ra_gf_p1_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_ra_gf_p50": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_ra_gf_p50_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_ra_gm_pall": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_ra_gm_pall_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_ra_gm_p100": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_ra_gm_p100_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_ra_gm_p75": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_ra_gm_p75_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_ra_gm_p25": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_ra_gm_p25_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_ra_gm_p1": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_ra_gm_p1_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_ra_gm_p50": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_ra_gm_p50_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rp_gp_pall": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rp_gp_pall_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rp_gp_p100": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rp_gp_p100_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rp_gp_p75": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rp_gp_p75_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rp_gp_p25": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rp_gp_p25_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rp_gp_p1": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rp_gp_p1_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rp_gp_p50": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rp_gp_p50_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rp_gf_pall": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rp_gf_pall_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rp_gf_p100": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rp_gf_p100_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rp_gf_p75": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rp_gf_p75_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rp_gf_p25": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rp_gf_p25_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rp_gf_p1": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rp_gf_p1_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rp_gf_p50": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rp_gf_p50_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rp_gm_pall": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rp_gm_pall_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rp_gm_p100": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rp_gm_p100_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rp_gm_p75": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rp_gm_p75_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rp_gm_p25": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rp_gm_p25_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rp_gm_p1": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rp_gm_p1_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rp_gm_p50": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rp_gm_p50_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rb_gp_pall": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rb_gp_pall_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rb_gp_p100": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rb_gp_p100_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rb_gp_p75": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rb_gp_p75_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rb_gp_p25": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rb_gp_p25_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rb_gp_p1": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rb_gp_p1_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rb_gp_p50": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rb_gp_p50_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rb_gf_pall": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rb_gf_pall_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rb_gf_p100": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rb_gf_p100_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rb_gf_p75": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rb_gf_p75_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rb_gf_p25": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rb_gf_p25_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rb_gf_p1": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rb_gf_p1_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rb_gf_p50": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rb_gf_p50_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rb_gm_pall": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rb_gm_pall_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rb_gm_p100": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rb_gm_p100_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rb_gm_p75": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rb_gm_p75_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rb_gm_p25": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rb_gm_p25_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rb_gm_p1": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rb_gm_p1_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rb_gm_p50": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rb_gm_p50_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rw_gp_pall": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rw_gp_pall_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rw_gp_p100": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rw_gp_p100_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rw_gp_p75": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rw_gp_p75_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rw_gp_p25": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rw_gp_p25_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rw_gp_p1": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rw_gp_p1_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rw_gp_p50": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rw_gp_p50_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rw_gf_pall": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rw_gf_pall_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rw_gf_p100": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rw_gf_p100_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rw_gf_p75": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rw_gf_p75_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rw_gf_p25": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rw_gf_p25_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rw_gf_p1": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rw_gf_p1_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rw_gf_p50": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rw_gf_p50_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rw_gm_pall": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rw_gm_pall_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rw_gm_p100": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rw_gm_p100_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rw_gm_p75": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rw_gm_p75_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rw_gm_p25": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rw_gm_p25_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rw_gm_p1": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rw_gm_p1_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rw_gm_p50": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rw_gm_p50_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rh_gp_pall": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rh_gp_pall_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rh_gp_p100": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rh_gp_p100_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rh_gp_p75": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rh_gp_p75_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rh_gp_p25": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rh_gp_p25_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rh_gp_p1": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rh_gp_p1_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rh_gp_p50": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rh_gp_p50_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rh_gf_pall": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rh_gf_pall_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rh_gf_p100": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rh_gf_p100_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rh_gf_p75": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rh_gf_p75_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rh_gf_p25": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rh_gf_p25_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rh_gf_p1": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rh_gf_p1_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rh_gf_p50": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rh_gf_p50_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rh_gm_pall": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rh_gm_pall_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rh_gm_p100": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rh_gm_p100_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rh_gm_p75": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rh_gm_p75_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rh_gm_p25": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rh_gm_p25_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rh_gm_p1": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rh_gm_p1_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rh_gm_p50": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rh_gm_p50_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rna_gp_pall": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rna_gp_pall_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rna_gp_p100": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rna_gp_p100_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rna_gp_p75": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rna_gp_p75_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rna_gp_p25": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rna_gp_p25_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rna_gp_p1": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rna_gp_p1_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rna_gp_p50": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rna_gp_p50_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rna_gf_pall": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rna_gf_pall_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rna_gf_p100": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rna_gf_p100_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rna_gf_p75": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rna_gf_p75_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rna_gf_p25": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rna_gf_p25_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rna_gf_p1": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rna_gf_p1_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rna_gf_p50": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rna_gf_p50_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rna_gm_pall": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rna_gm_pall_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rna_gm_p100": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rna_gm_p100_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rna_gm_p75": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rna_gm_p75_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rna_gm_p25": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rna_gm_p25_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rna_gm_p1": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rna_gm_p1_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rna_gm_p50": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "kfr_rna_gm_p50_l": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "_smart_source_bucket": {
+            "type": "string"
+          },
+          "_smart_source_file": {
+            "type": "string"
+          },
+          "_smart_source_lineno": {
+            "type": "integer"
+          }
+        },
+        "selected": true,
+        "type": "object"
+      },
+      "stream": "opp_atlas",
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "tract"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "name"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_ra_gp_pall"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_ra_gp_pall_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_ra_gp_p100"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_ra_gp_p100_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_ra_gp_p75"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_ra_gp_p75_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_ra_gp_p25"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_ra_gp_p25_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_ra_gp_p1"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_ra_gp_p1_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_ra_gp_p50"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_ra_gp_p50_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_ra_gf_pall"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_ra_gf_pall_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_ra_gf_p100"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_ra_gf_p100_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_ra_gf_p75"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_ra_gf_p75_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_ra_gf_p25"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_ra_gf_p25_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_ra_gf_p1"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_ra_gf_p1_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_ra_gf_p50"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_ra_gf_p50_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_ra_gm_pall"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_ra_gm_pall_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_ra_gm_p100"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_ra_gm_p100_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_ra_gm_p75"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_ra_gm_p75_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_ra_gm_p25"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_ra_gm_p25_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_ra_gm_p1"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_ra_gm_p1_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_ra_gm_p50"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_ra_gm_p50_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rp_gp_pall"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rp_gp_pall_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rp_gp_p100"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rp_gp_p100_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rp_gp_p75"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rp_gp_p75_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rp_gp_p25"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rp_gp_p25_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rp_gp_p1"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rp_gp_p1_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rp_gp_p50"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rp_gp_p50_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rp_gf_pall"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rp_gf_pall_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rp_gf_p100"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rp_gf_p100_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rp_gf_p75"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rp_gf_p75_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rp_gf_p25"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rp_gf_p25_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rp_gf_p1"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rp_gf_p1_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rp_gf_p50"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rp_gf_p50_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rp_gm_pall"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rp_gm_pall_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rp_gm_p100"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rp_gm_p100_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rp_gm_p75"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rp_gm_p75_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rp_gm_p25"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rp_gm_p25_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rp_gm_p1"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rp_gm_p1_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rp_gm_p50"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rp_gm_p50_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rb_gp_pall"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rb_gp_pall_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rb_gp_p100"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rb_gp_p100_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rb_gp_p75"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rb_gp_p75_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rb_gp_p25"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rb_gp_p25_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rb_gp_p1"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rb_gp_p1_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rb_gp_p50"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rb_gp_p50_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rb_gf_pall"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rb_gf_pall_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rb_gf_p100"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rb_gf_p100_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rb_gf_p75"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rb_gf_p75_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rb_gf_p25"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rb_gf_p25_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rb_gf_p1"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rb_gf_p1_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rb_gf_p50"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rb_gf_p50_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rb_gm_pall"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rb_gm_pall_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rb_gm_p100"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rb_gm_p100_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rb_gm_p75"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rb_gm_p75_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rb_gm_p25"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rb_gm_p25_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rb_gm_p1"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rb_gm_p1_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rb_gm_p50"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rb_gm_p50_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rw_gp_pall"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rw_gp_pall_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rw_gp_p100"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rw_gp_p100_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rw_gp_p75"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rw_gp_p75_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rw_gp_p25"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rw_gp_p25_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rw_gp_p1"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rw_gp_p1_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rw_gp_p50"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rw_gp_p50_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rw_gf_pall"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rw_gf_pall_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rw_gf_p100"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rw_gf_p100_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rw_gf_p75"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rw_gf_p75_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rw_gf_p25"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rw_gf_p25_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rw_gf_p1"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rw_gf_p1_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rw_gf_p50"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rw_gf_p50_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rw_gm_pall"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rw_gm_pall_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rw_gm_p100"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rw_gm_p100_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rw_gm_p75"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rw_gm_p75_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rw_gm_p25"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rw_gm_p25_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rw_gm_p1"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rw_gm_p1_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rw_gm_p50"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rw_gm_p50_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rh_gp_pall"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rh_gp_pall_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rh_gp_p100"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rh_gp_p100_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rh_gp_p75"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rh_gp_p75_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rh_gp_p25"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rh_gp_p25_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rh_gp_p1"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rh_gp_p1_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rh_gp_p50"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rh_gp_p50_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rh_gf_pall"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rh_gf_pall_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rh_gf_p100"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rh_gf_p100_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rh_gf_p75"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rh_gf_p75_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rh_gf_p25"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rh_gf_p25_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rh_gf_p1"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rh_gf_p1_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rh_gf_p50"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rh_gf_p50_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rh_gm_pall"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rh_gm_pall_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rh_gm_p100"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rh_gm_p100_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rh_gm_p75"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rh_gm_p75_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rh_gm_p25"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rh_gm_p25_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rh_gm_p1"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rh_gm_p1_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rh_gm_p50"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rh_gm_p50_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rna_gp_pall"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rna_gp_pall_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rna_gp_p100"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rna_gp_p100_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rna_gp_p75"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rna_gp_p75_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rna_gp_p25"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rna_gp_p25_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rna_gp_p1"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rna_gp_p1_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rna_gp_p50"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rna_gp_p50_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rna_gf_pall"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rna_gf_pall_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rna_gf_p100"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rna_gf_p100_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rna_gf_p75"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rna_gf_p75_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rna_gf_p25"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rna_gf_p25_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rna_gf_p1"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rna_gf_p1_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rna_gf_p50"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rna_gf_p50_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rna_gm_pall"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rna_gm_pall_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rna_gm_p100"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rna_gm_p100_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rna_gm_p75"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rna_gm_p75_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rna_gm_p25"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rna_gm_p25_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rna_gm_p1"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rna_gm_p1_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rna_gm_p50"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "kfr_rna_gm_p50_l"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "_smart_source_bucket"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "_smart_source_file"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "_smart_source_lineno"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        }
+      ],
+      "selected": true
+    },
+    {
+      "tap_stream_id": "zip_tract_mapping",
+      "key_properties": [
+        "tract"
+      ],
+      "schema": {
+        "properties": {
+          "_smart_source_bucket": {
+            "type": "string"
+          },
+          "_smart_source_file": {
+            "type": "string"
+          },
+          "_smart_source_lineno": {
+            "type": "integer"
+          }
+        },
+        "selected": true,
+        "type": "object"
+      },
+      "stream": "zip_tract_mapping",
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "_smart_source_bucket"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "_smart_source_file"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "_smart_source_lineno"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        }
+      ],
+      "selected": true
+    },
+    {
+      "tap_stream_id": "zillow_home_idx",
+      "key_properties": [
+        "RegionID"
+      ],
+      "schema": {
+        "properties": {
+          "_smart_source_bucket": {
+            "type": "string"
+          },
+          "_smart_source_file": {
+            "type": "string"
+          },
+          "_smart_source_lineno": {
+            "type": "integer"
+          }
+        },
+        "selected": true,
+        "type": "object"
+      },
+      "stream": "zillow_home_idx",
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "_smart_source_bucket"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "_smart_source_file"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "_smart_source_lineno"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        }
+      ],
+      "selected": true
+    }
+  ]
+}
