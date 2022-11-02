@@ -54,4 +54,11 @@ plugins:
       namespace: dbt_duckdb
       config:
         adapter: dbt-duckdb
-        path: data
+        path: data/duck.db
+      commands:
+        server:
+          args: server serve --project-dir ${MELTANO_PROJECT_ROOT}/transform --profiles-dir ${MELTANO_PROJECT_ROOT}/transform/profiles/duckdb
+          description: Start server
+        document:
+          args: yaml document --project-dir ${MELTANO_PROJECT_ROOT}/transform --profiles-dir ${MELTANO_PROJECT_ROOT}/transform/profiles/duckdb
+          description: Compile documentation
