@@ -49,16 +49,20 @@ plugins:
       variant: apache
       pip_url: apache-superset==1.5.0 markupsafe==2.0.1
     - name: dbt-osmosis
+      namespace: dbt_duckdb
       variant: z3z1ma
       pip_url: dbt-osmosis dbt-duckdb~=1.2.0
-      namespace: dbt_duckdb
+      commands:
+        server:
+          args:
+            server serve --project-dir ${MELTANO_PROJECT_ROOT}/transform --profiles-dir
+            ${MELTANO_PROJECT_ROOT}/transform/profiles/duckdb
+          description: Start server
+        document:
+          args:
+            yaml document --project-dir ${MELTANO_PROJECT_ROOT}/transform --profiles-dir
+            ${MELTANO_PROJECT_ROOT}/transform/profiles/duckdb
+          description: Compile documentation
       config:
         adapter: dbt-duckdb
         path: data/duck.db
-      commands:
-        server:
-          args: server serve --project-dir ${MELTANO_PROJECT_ROOT}/transform --profiles-dir ${MELTANO_PROJECT_ROOT}/transform/profiles/duckdb
-          description: Start server
-        document:
-          args: yaml document --project-dir ${MELTANO_PROJECT_ROOT}/transform --profiles-dir ${MELTANO_PROJECT_ROOT}/transform/profiles/duckdb
-          description: Compile documentation
