@@ -13,20 +13,20 @@ plugins:
       config:
         tables:
           - path: file://data
-            name: opp_atlas
+            name: IN_OPP_ATLAS
             pattern: opportunity_atlas.csv
             format: csv
             start_date: "2017-05-01T00:00:00Z"
             key_properties: [tract]
           - path: file://data
-            name: zip_tract_mapping
+            name: IN_ZIP_TRACT
             pattern: ZIP_TRACT_122021.xlsx
             format: excel
             start_date: "2017-05-01T00:00:00Z"
             key_properties: [tract]
             worksheet_name: SQLT0006
           - path: file://data
-            name: zillow_home_idx
+            name: IN_ZILLOW_IDX
             pattern: Zip_zhvi_uc_sfrcondo_tier_0.33_0.67_sm_sa_month.csv
             format: csv
             start_date: "2017-05-01T00:00:00Z"
