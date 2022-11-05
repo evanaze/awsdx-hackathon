@@ -47,7 +47,7 @@ plugins:
   utilities:
     - name: superset
       variant: apache
-      pip_url: apache-superset==1.5.0 markupsafe==2.0.1
+      pip_url: apache-superset==1.5.0 markupsafe==2.0.1 duckdb-engine
     - name: dbt-osmosis
       namespace: dbt_duckdb
       variant: z3z1ma
