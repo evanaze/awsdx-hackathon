@@ -13,6 +13,12 @@ plugins:
       config:
         tables:
           - path: file://data
+            name: IN_LONG_LAT
+            pattern: long_lat.csv
+            format: csv
+            start_date: "2017-05-01T00:00:00Z"
+            key_properties: [zip]
+          - path: file://data
             name: IN_OPP_ATLAS
             pattern: opportunity_atlas.csv
             format: csv

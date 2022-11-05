@@ -1,0 +1,274 @@
+{
+  "streams": [
+    {
+      "tap_stream_id": "IN_LONG_LAT",
+      "key_properties": [
+        "zip"
+      ],
+      "schema": {
+        "properties": {
+          "": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "country": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "zip": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "county": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "state": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "stateid": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "region": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "col1": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "col2": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "col3": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "long": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "lat": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "col4": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "_smart_source_bucket": {
+            "type": "string"
+          },
+          "_smart_source_file": {
+            "type": "string"
+          },
+          "_smart_source_lineno": {
+            "type": "integer"
+          }
+        },
+        "selected": true,
+        "type": "object"
+      },
+      "stream": "IN_LONG_LAT",
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            ""
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "country"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "zip"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "county"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "state"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "stateid"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "region"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "col1"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "col2"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "col3"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "long"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "lat"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "col4"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "_smart_source_bucket"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "_smart_source_file"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "_smart_source_lineno"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        }
+      ],
+      "selected": true
+    }
+  ]
+}
