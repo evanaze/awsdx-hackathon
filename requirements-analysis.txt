@@ -5,7 +5,6 @@ click-plugins==1.1.1
 cligj==0.7.2
 Fiona==1.8.22
 geopandas==0.12.1
-h3==3.7.4
 munch==2.5.0
 numpy==1.23.4
 packaging==21.3
