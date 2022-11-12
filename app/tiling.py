@@ -1,6 +1,6 @@
 import os
+import logging
 import multiprocessing as mp
-from logging import getLogger
 
 import h3
 import pandas as pd
@@ -9,7 +9,20 @@ from shapely.ops import transform
 from shapely.geometry import mapping
 
 DATA_DIR = "data/zipfiles"
-LOGGER = getLogger(__name__)
+LOGGER = logging.getLogger(__name__)
+LOGGER.setLevel(logging.DEBUG)
+# create console handler and set level to debug
+ch = logging.StreamHandler()
+ch.setLevel(logging.DEBUG)
+
+# create formatter
+formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+
+# add formatter to ch
+ch.setFormatter(formatter)
+
+# add ch to logger
+LOGGER.addHandler(ch)
 
 
 def get_geodata(filepath: str):
@@ -53,11 +66,12 @@ def hex_fill_df(gdf):
 def tile_state(zipfile):
     """Tile a single tract."""
     path = os.path.join(DATA_DIR, zipfile)
-    LOGGER.info("Tiling state with filename %s", zipfile)
-
-    return (get_geodata(path)
+    LOGGER.info("Starting to tile state with filename %s", zipfile)
+    gdf =  (get_geodata(path)
             .pipe(prepare_districts)
             .pipe(hex_fill_df))
+    LOGGER.info("Finished tiling state file filename %s", zipfile)
+    return gdf
 
 
 def main():
