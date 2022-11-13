@@ -3,7 +3,6 @@ import logging
 import multiprocessing as mp
 
 import h3
-import pandas as pd
 from geopandas import read_file
 from shapely.ops import transform
 from shapely.geometry import mapping
