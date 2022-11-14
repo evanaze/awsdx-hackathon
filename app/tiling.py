@@ -1,5 +1,6 @@
 import os
 import multiprocessing as mp
+from operator import methodcaller
 
 import h3
 from geopandas import read_file
@@ -10,38 +11,6 @@ from logger import get_logger
 
 DATA_DIR = "data/zipfiles"
 LOGGER = get_logger(__name__)
-
-
-def get_geodata(filepath: str):
-    gdf = read_file(filepath)
-    return (
-        gdf.astype({"INTPTLAT": float, "INTPTLON": float, "GEOID": "category"})
-        .drop(
-            [
-                "STATEFP",
-                "COUNTYFP",
-                "TRACTCE",
-                "ALAND",
-                "AWATER",
-                "NAME",
-                "NAMELSAD",
-                "MTFCC",
-                "FUNCSTAT",
-            ],
-            axis=1,
-        )
-        .rename({"INTPTLAT": "lat", "INTPTLON": "lon", "GEOID": "geoid"}, axis=1)
-    )
-
-
-def prepare_districts(gdf_districts):
-    """Loads a geojson files of polygon geometries and features,
-    swaps the latitude and longitude andstores geojson"""
-    return gdf_districts.assign(
-        geom_swap_geojson=lambda x: x["geometry"]
-        .map(lambda polygon: transform(lambda x, y: (y, x), polygon))
-        .apply(lambda y: mapping(y))
-    )
 
 
 def hex_fill_tract(geom_geojson: dict, res: int = 13, flag_swap: bool = False) -> set:
@@ -61,36 +30,72 @@ def hex_fill_tract(geom_geojson: dict, res: int = 13, flag_swap: bool = False) -
     return list(set_hexagons)
 
 
-def hex_fill_df(gdf):
-    """Fill the tracts with hexagons."""
-    return gdf.assign(hex_fill=gdf["geom_swap_geojson"].apply(hex_fill_tract))
+class TileGeoData:
+    def __init__(self, filename: str):
+        self.gdf = None
+        self.filename = filename
 
+    def get_geodata(self):
+        self.gdf = read_file(self.filepath)
+        self.gdf = (
+            self.gdf.astype({"INTPTLAT": float, "INTPTLON": float, "GEOID": "category"})
+            .drop(
+                [
+                    "STATEFP",
+                    "COUNTYFP",
+                    "TRACTCE",
+                    "ALAND",
+                    "AWATER",
+                    "NAME",
+                    "NAMELSAD",
+                    "MTFCC",
+                    "FUNCSTAT",
+                ],
+                axis=1,
+            )
+            .rename({"INTPTLAT": "lat", "INTPTLON": "lon", "GEOID": "geoid"}, axis=1)
+        )
 
-def write_gdf(gdf, filename: str):
-    """Write the Dataframe to file."""
-    gdf.to_parquet(
-        f"data/tiled_states/{filename.rstrip('.zip')}.parquet", engine="pyarrow"
-    )
+    def prepare_districts(self):
+        """Swap the latitude and longitude and store geojson"""
+        self.gdf = self.gdf.assign(
+            geom_swap_geojson=lambda x: x["geometry"]
+            .map(lambda polygon: transform(lambda x, y: (y, x), polygon))
+            .apply(lambda y: mapping(y))
+        )
 
+    def hex_fill_df(self):
+        """Fill the tracts with hexagons."""
+        self.gdf = self.gdf.assign(
+            hex_fill=self.gdf["geom_swap_geojson"].apply(hex_fill_tract)
+        )
 
-def tile_state(zipfile):
-    """Tile a single tract."""
-    path = os.path.join(DATA_DIR, zipfile)
-    LOGGER.info("Starting to tile state with filename %s", zipfile)
-    (
-        get_geodata(path)
-        .pipe(prepare_districts)
-        .pipe(hex_fill_df)
-        .pipe(write_gdf, filename=zipfile)
-    )
-    LOGGER.info("Finished tiling state file filename %s", zipfile)
+    def write_gdf(self):
+        """Write the Dataframe to file."""
+        LOGGER.info("Finished tiling state file filename %s", self.filename)
+        outfile = f"data/tiled_states/{self.filepath.rstrip('.zip')}.parquet"
+        LOGGER.info("Writing state %s to %s", self.filename, outfile)
+        self.gdf.to_parquet(
+            outfile,
+            engine="pyarrow",
+        )
+
+    def tile_state(self):
+        """Tile a single tract."""
+        self.filepath = os.path.join(DATA_DIR, self.filename)
+        LOGGER.info("Starting to tile state with filename %s", self.filename)
+        self.get_geodata()
+        self.prepare_districts()
+        self.hex_fill_df()
+        self.write_gdf()
 
 
 def main():
     """Tile all of the states."""
     zipfiles = os.listdir(DATA_DIR)
     pool = mp.Pool(processes=(mp.cpu_count() - 1))
-    results = pool.map(tile_state, zipfiles)
+    tile_objects = [TileGeoData(zipfile) for zipfile in zipfiles]
+    results = pool.map(methodcaller("tile_state"), tile_objects)
     pool.close()
     pool.join()
 
