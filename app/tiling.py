@@ -34,6 +34,7 @@ class TileGeoData:
     def __init__(self, filename: str):
         self.gdf = None
         self.filename = filename
+        self.state = filename.rstrip(".zip")
 
     def get_geodata(self):
         self.gdf = read_file(self.filepath)
@@ -72,9 +73,9 @@ class TileGeoData:
 
     def write_gdf(self):
         """Write the Dataframe to file."""
-        LOGGER.info("Finished tiling state file filename %s", self.filename)
-        outfile = f"data/tiled_states/{self.filepath.rstrip('.zip')}.parquet"
-        LOGGER.info("Writing state %s to %s", self.filename, outfile)
+        LOGGER.info("Finished tiling state %s", self.state)
+        outfile = f"data/tiled_states/{self.filename.rstrip('.zip')}.parquet"
+        LOGGER.info("Writing state %s to %s", self.state, outfile)
         self.gdf.to_parquet(
             outfile,
             engine="pyarrow",
@@ -83,7 +84,7 @@ class TileGeoData:
     def tile_state(self):
         """Tile a single tract."""
         self.filepath = os.path.join(DATA_DIR, self.filename)
-        LOGGER.info("Starting to tile state with filename %s", self.filename)
+        LOGGER.info("Starting to tile state %s", self.state)
         self.get_geodata()
         self.prepare_districts()
         self.hex_fill_df()
