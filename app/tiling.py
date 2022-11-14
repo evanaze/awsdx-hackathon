@@ -1,5 +1,4 @@
 import os
-import logging
 import multiprocessing as mp
 
 import h3
@@ -7,15 +6,10 @@ from geopandas import read_file
 from shapely.ops import transform
 from shapely.geometry import mapping
 
+from logger import get_logger
+
 DATA_DIR = "data/zipfiles"
-LOGGER = logging.getLogger(__name__)
-LOGGER.setLevel(logging.DEBUG)
-# create console handler and set level to debug
-ch = logging.StreamHandler()
-ch.setLevel(logging.DEBUG)
-formatter = logging.Formatter("%(asctime)s - %(name)s - %(levelname)s - %(message)s")
-ch.setFormatter(formatter)
-LOGGER.addHandler(ch)
+LOGGER = get_logger(__name__)
 
 
 def get_geodata(filepath: str):
