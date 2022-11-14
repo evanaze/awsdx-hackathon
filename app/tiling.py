@@ -97,6 +97,7 @@ def main():
     infiles = set(os.listdir(DATA_DIR))
     donefiles = set(os.listdir("data/tiled_states"))
     zipfiles = infiles.difference(donefiles)
+    LOGGER.info("%s states to tile.", len(zipfiles))
 
     # Create the pool for multiprocessing
     pool = mp.Pool(processes=(mp.cpu_count() - 1))
