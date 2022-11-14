@@ -73,13 +73,13 @@ class TileGeoData:
 
     def write_gdf(self):
         """Write the Dataframe to file."""
-        LOGGER.info("Finished tiling state %s", self.state)
         outfile = f"data/tiled_states/{self.filename.rstrip('.zip')}.parquet"
         LOGGER.info("Writing state %s to %s", self.state, outfile)
         self.gdf.to_parquet(
             outfile,
             engine="pyarrow",
         )
+        LOGGER.info("Finished tiling state %s", self.state)
 
     def tile_state(self):
         """Tile a single tract."""
@@ -93,7 +93,12 @@ class TileGeoData:
 
 def main():
     """Tile all of the states."""
-    zipfiles = os.listdir(DATA_DIR)
+    # Get the list of files to read
+    infiles = set(os.listdir(DATA_DIR))
+    donefiles = set(os.listdir("data/tiled_states"))
+    zipfiles = infiles.difference(donefiles)
+
+    # Create the pool for multiprocessing
     pool = mp.Pool(processes=(mp.cpu_count() - 1))
     tile_objects = [TileGeoData(zipfile) for zipfile in zipfiles]
     results = pool.map(methodcaller("tile_state"), tile_objects)
