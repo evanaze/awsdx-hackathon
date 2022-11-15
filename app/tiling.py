@@ -1,5 +1,6 @@
 import os
 import multiprocessing as mp
+import concurrent.futures as cf
 from operator import methodcaller
 
 import h3
@@ -100,11 +101,11 @@ def main():
     LOGGER.info("%s states to tile.", len(zipfiles))
 
     # Create the pool for multiprocessing
-    pool = mp.Pool(processes=(mp.cpu_count() - 1))
-    tile_objects = [TileGeoData(zipfile) for zipfile in zipfiles]
-    results = pool.map(methodcaller("tile_state"), tile_objects)
-    pool.close()
-    pool.join()
+    with cf.ProcessPoolExecutor(max_workers=mp.cpu_count() - 1) as executor:
+        tile_objects = [TileGeoData(zipfile) for zipfile in zipfiles]
+        futures = executor.map(methodcaller("tile_state"), tile_objects)
+        for future in cf.as_completed(futures):
+            LOGGER.info("Result: %s", future.result)
 
 
 if __name__ == "__main__":
