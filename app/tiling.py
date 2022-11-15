@@ -102,8 +102,10 @@ def main():
 
     # Create the pool for multiprocessing
     with cf.ProcessPoolExecutor(max_workers=mp.cpu_count() - 1) as executor:
-        tile_objects = [TileGeoData(zipfile) for zipfile in zipfiles]
-        futures = executor.map(methodcaller("tile_state"), tile_objects)
+        futures = [
+            executor.submit(methodcaller("tile_state"), tile_object)
+            for tile_object in [TileGeoData(zipfile) for zipfile in zipfiles]
+        ]
         for future in cf.as_completed(futures):
             LOGGER.info("Result: %s", future.result)
 
