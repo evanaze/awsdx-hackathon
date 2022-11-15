@@ -106,8 +106,8 @@ def main():
             for tile_object in [TileGeoData(zipfile) for zipfile in zipfiles]
         ]
         for future in cf.as_completed(futures):
-            LOGGER.info("Result: %s", future.result)
-            future.write_gdf()
+            result = future.result()
+            result.write_gdf()
 
 
 if __name__ == "__main__":
