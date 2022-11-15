@@ -95,8 +95,10 @@ class TileGeoData:
 def main():
     """Tile all of the states."""
     # Get the list of files to read
-    infiles = set(os.listdir(DATA_DIR))
-    donefiles = set(os.listdir("data/tiled_states"))
+    infiles = set([file.rtrim(".zip") for file in os.listdir(DATA_DIR)])
+    donefiles = set(
+        [file.rtrim(".parquet") for file in os.listdir("data/tiled_states")]
+    )
     zipfiles = infiles.difference(donefiles)
     LOGGER.info("%s states to tile.", len(zipfiles))
 
