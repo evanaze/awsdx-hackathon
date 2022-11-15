@@ -110,6 +110,7 @@ def main():
         ]
         for future in cf.as_completed(futures):
             LOGGER.info("Result: %s", future.result)
+            future.
 
 
 if __name__ == "__main__":
