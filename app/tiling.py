@@ -26,7 +26,7 @@ def hex_fill_tract(geom_geojson: dict, res: int = 13, flag_swap: bool = False) -
             h3.polyfill(geom_geojson, res, geo_json_conformant=flag_swap)
         )
     except ValueError:
-        LOGGER.warning("Error on data of type %s. Continuing.", geom_geojson["type"])
+        LOGGER.debug("Error on data of type %s. Continuing.", geom_geojson["type"])
         return set()
     return list(set_hexagons)
 
