@@ -95,11 +95,11 @@ class TileGeoData:
 def main():
     """Tile all of the states."""
     # Get the list of files to read
-    infiles = set([file.rtrim(".zip") for file in os.listdir(DATA_DIR)])
+    infiles = set([file.rstrip(".zip") for file in os.listdir(DATA_DIR)])
     donefiles = set(
-        [file.rtrim(".parquet") for file in os.listdir("data/tiled_states")]
+        [file[:-8] for file in os.listdir("data/tiled_states")]
     )
-    zipfiles = infiles.difference(donefiles)
+    zipfiles = [file+".zip" for file in infiles.difference(donefiles)]
     LOGGER.info("%s states to tile.", len(zipfiles))
 
     # Create the pool for multiprocessing
