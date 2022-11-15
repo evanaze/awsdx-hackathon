@@ -89,17 +89,14 @@ class TileGeoData:
         self.get_geodata()
         self.prepare_districts()
         self.hex_fill_df()
-        self.write_gdf()
 
 
 def main():
     """Tile all of the states."""
     # Get the list of files to read
     infiles = set([file.rstrip(".zip") for file in os.listdir(DATA_DIR)])
-    donefiles = set(
-        [file[:-8] for file in os.listdir("data/tiled_states")]
-    )
-    zipfiles = [file+".zip" for file in infiles.difference(donefiles)]
+    donefiles = set([file[:-8] for file in os.listdir("data/tiled_states")])
+    zipfiles = [file + ".zip" for file in infiles.difference(donefiles)]
     LOGGER.info("%s states to tile.", len(zipfiles))
 
     # Create the pool for multiprocessing
@@ -110,7 +107,7 @@ def main():
         ]
         for future in cf.as_completed(futures):
             LOGGER.info("Result: %s", future.result)
-            future.
+            future.write_gdf()
 
 
 if __name__ == "__main__":
