@@ -4,11 +4,11 @@ import concurrent.futures as cf
 from operator import methodcaller
 
 import h3
-from geopandas import read_file
 from shapely.ops import transform
 from shapely.geometry import mapping
 
 from logger import get_logger
+from app.config import PARQUET_DIR
 
 DATA_DIR = "data/zipfiles"
 LOGGER = get_logger(__name__)

@@ -1,10 +1,10 @@
 """Convert GeoData to Parquet files using Geopandas"""
 import os
+
 from geopandas import read_file
 
-DATA_DIR = "data"
-ZIP_DIR = os.path.join(DATA_DIR, "zipfiles")
-PARQUET_DIR = os.path.join(DATA_DIR, "tract_parquet")
+from app.config import (ZIP_DIR, PARQUET_DIR)
+
 
 
 def geodata_to_parquet() -> None:
