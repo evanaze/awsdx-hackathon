@@ -37,27 +37,6 @@ class TileGeoData:
         self.filename = filename
         self.state = filename.rstrip(".zip")
 
-    def get_geodata(self):
-        self.gdf = read_file(self.filepath)
-        self.gdf = (
-            self.gdf.astype({"INTPTLAT": float, "INTPTLON": float, "GEOID": "category"})
-            .drop(
-                [
-                    "STATEFP",
-                    "COUNTYFP",
-                    "TRACTCE",
-                    "ALAND",
-                    "AWATER",
-                    "NAME",
-                    "NAMELSAD",
-                    "MTFCC",
-                    "FUNCSTAT",
-                ],
-                axis=1,
-            )
-            .rename({"INTPTLAT": "lat", "INTPTLON": "lon", "GEOID": "geoid"}, axis=1)
-        )
-
     def prepare_districts(self):
         """Swap the latitude and longitude and store geojson"""
         self.gdf = self.gdf.assign(
@@ -80,7 +59,7 @@ class TileGeoData:
             outfile,
             engine="pyarrow",
         )
-        LOGGER.info("Finished tiling state %s", self.state)
+        LOGGER.info("Finished writing state %s", self.state)
 
     def tile_state(self):
         """Tile a single tract."""
@@ -89,6 +68,7 @@ class TileGeoData:
         self.get_geodata()
         self.prepare_districts()
         self.hex_fill_df()
+        LOGGER.info("Finished tiling state %s", self.state)
 
 
 def main():
@@ -100,12 +80,14 @@ def main():
     LOGGER.info("%s states to tile.", len(zipfiles))
 
     # Create the pool for multiprocessing
-    with cf.ProcessPoolExecutor(max_workers=mp.cpu_count() - 1) as executor:
+    with cf.ProcessPoolExecutor(max_workers=int(mp.cpu_count() / 2)) as executor:
         futures = [
             executor.submit(methodcaller("tile_state"), tile_object)
             for tile_object in [TileGeoData(zipfile) for zipfile in zipfiles]
         ]
         for future in cf.as_completed(futures):
+            if (exception := future.exception()):
+                LOGGER.error(exception)
             result = future.result()
             result.write_gdf()
 
