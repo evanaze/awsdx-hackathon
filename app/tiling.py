@@ -1,13 +1,14 @@
 import os
 
 import h3
+import numpy as np
 import pandas as pd
-import dask.dataframe as dd
+from dask_geopandas import read_parquet
 from shapely.ops import transform
 from shapely.geometry import mapping
 
 from logger import get_logger
-from app.config import PARQUET_DIR, TILED_CENSUS_DIR, DATA_DIR
+from config import PARQUET_DIR, TILED_CENSUS_DIR, DATA_DIR
 
 LOGGER = get_logger(__name__)
 
@@ -41,7 +42,9 @@ def hex_fill_tract(geom_geojson: dict, res: int = 13, flag_swap: bool = False) -
 
 def hex_fill_df(gdf):
     """Fill the tracts with hexagons."""
-    return gdf.assign(hex_fill=gdf["geom_swap_geojson"].apply(hex_fill_tract))
+    return gdf.assign(hex_fill=gdf["geom_swap_geojson"].apply(hex_fill_tract)).drop(
+        ["geometry", "geom_swap_geojson"], axis=1
+    )
 
 
 def tile_partition(df: pd.DataFrame):
@@ -59,11 +62,19 @@ def tile_geodata():
 
     # Process the data in parallel using Dask
     (
-        dd.read_parquet([os.path.join(PARQUET_DIR, file) for file in files_todo])
-        .map_partitions(tile_partition)
+        read_parquet([os.path.join(PARQUET_DIR, file) for file in files_todo])
+        .map_partitions(
+            tile_partition,
+            meta={
+                "geoid": pd.CategoricalDtype,
+                "lat": np.float64,
+                "lon": np.float64,
+                "hex_fill": object,
+            },
+        )
         .to_parquet(os.path.join(DATA_DIR, "all_tiled_tracts.parquet"))
-    )
+    ).compute()
 
 
 if __name__ == "__main__":
-    main()
+    tile_geodata()
