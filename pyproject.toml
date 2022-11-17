@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "awsdx-hackathon"
+version = "0.1.0"
+description = "Submission for AWS Data Exchange hackathon"
+authors = ["Evan Azevedo <evan.azevedo@joby.aero>"]
+license = "GNU"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pandas = "geopandas"
+geopandas = "^0.12.1"
+dask = "^2022.11.0"
+PyYAML = "^6.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

@@ -4,13 +4,13 @@ import concurrent.futures as cf
 from operator import methodcaller
 
 import h3
+import dask.dataframe as dd
 from shapely.ops import transform
 from shapely.geometry import mapping
 
 from logger import get_logger
-from app.config import PARQUET_DIR
+from app.config import PARQUET_DIR, TILED_CENSUS_DIR
 
-DATA_DIR = "data/zipfiles"
 LOGGER = get_logger(__name__)
 
 
@@ -29,6 +29,20 @@ def hex_fill_tract(geom_geojson: dict, res: int = 13, flag_swap: bool = False) -
         LOGGER.debug("Error on data of type %s. Continuing.", geom_geojson["type"])
         return set()
     return list(set_hexagons)
+
+def tile_state(self):
+    """Tile a single tract."""
+    self.filepath = os.path.join(DATA_DIR, self.filename)
+    LOGGER.info("Starting to tile state %s", self.state)
+    self.get_geodata()
+    self.prepare_districts()
+    self.hex_fill_df()
+    LOGGER.info("Finished tiling state %s", self.state)
+
+def tile_geodata():
+    """Tile the Geodata."""
+    gdf = dd.read_parquet(os.path.join(PARQUET_DIR, "*.parquet"))
+    
 
 
 class TileGeoData:
@@ -61,21 +75,12 @@ class TileGeoData:
         )
         LOGGER.info("Finished writing state %s", self.state)
 
-    def tile_state(self):
-        """Tile a single tract."""
-        self.filepath = os.path.join(DATA_DIR, self.filename)
-        LOGGER.info("Starting to tile state %s", self.state)
-        self.get_geodata()
-        self.prepare_districts()
-        self.hex_fill_df()
-        LOGGER.info("Finished tiling state %s", self.state)
-
 
 def main():
     """Tile all of the states."""
     # Get the list of files to read
-    infiles = set([file.rstrip(".zip") for file in os.listdir(DATA_DIR)])
-    donefiles = set([file[:-8] for file in os.listdir("data/tiled_states")])
+    infiles = set([file[:-8] for file in os.listdir(PARQUET_DIR)])
+    donefiles = set([file[:-8] for file in os.listdir(TILED_CENSUS_DIR)])
     zipfiles = [file + ".zip" for file in infiles.difference(donefiles)]
     LOGGER.info("%s states to tile.", len(zipfiles))
 
