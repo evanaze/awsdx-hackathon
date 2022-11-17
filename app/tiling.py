@@ -1,17 +1,25 @@
 import os
-import multiprocessing as mp
-import concurrent.futures as cf
-from operator import methodcaller
 
 import h3
+import pandas as pd
 import dask.dataframe as dd
 from shapely.ops import transform
 from shapely.geometry import mapping
 
 from logger import get_logger
-from app.config import PARQUET_DIR, TILED_CENSUS_DIR
+from app.config import PARQUET_DIR, TILED_CENSUS_DIR, DATA_DIR
 
 LOGGER = get_logger(__name__)
+
+
+def prepare_districts(gdf):
+    """Loads a geojson files of polygon geometries and features,
+    swaps the latitude and longitude and stores geojson"""
+    return gdf.assign(
+        geom_swap_geojson=lambda x: x["geometry"]
+        .map(lambda polygon: transform(lambda x, y: (y, x), polygon))
+        .apply(lambda y: mapping(y))
+    )
 
 
 def hex_fill_tract(geom_geojson: dict, res: int = 13, flag_swap: bool = False) -> set:
@@ -30,71 +38,31 @@ def hex_fill_tract(geom_geojson: dict, res: int = 13, flag_swap: bool = False) -
         return set()
     return list(set_hexagons)
 
-def tile_state(self):
+
+def hex_fill_df(gdf):
+    """Fill the tracts with hexagons."""
+    return gdf.assign(hex_fill=gdf["geom_swap_geojson"].apply(hex_fill_tract))
+
+
+def tile_partition(df: pd.DataFrame):
     """Tile a single tract."""
-    self.filepath = os.path.join(DATA_DIR, self.filename)
-    LOGGER.info("Starting to tile state %s", self.state)
-    self.get_geodata()
-    self.prepare_districts()
-    self.hex_fill_df()
-    LOGGER.info("Finished tiling state %s", self.state)
+    return df.pipe(prepare_districts).pipe(hex_fill_df)
+
 
 def tile_geodata():
     """Tile the Geodata."""
-    gdf = dd.read_parquet(os.path.join(PARQUET_DIR, "*.parquet"))
-    
-
-
-class TileGeoData:
-    def __init__(self, filename: str):
-        self.gdf = None
-        self.filename = filename
-        self.state = filename.rstrip(".zip")
-
-    def prepare_districts(self):
-        """Swap the latitude and longitude and store geojson"""
-        self.gdf = self.gdf.assign(
-            geom_swap_geojson=lambda x: x["geometry"]
-            .map(lambda polygon: transform(lambda x, y: (y, x), polygon))
-            .apply(lambda y: mapping(y))
-        )
-
-    def hex_fill_df(self):
-        """Fill the tracts with hexagons."""
-        self.gdf = self.gdf.assign(
-            hex_fill=self.gdf["geom_swap_geojson"].apply(hex_fill_tract)
-        )
-
-    def write_gdf(self):
-        """Write the Dataframe to file."""
-        outfile = f"data/tiled_states/{self.filename.rstrip('.zip')}.parquet"
-        LOGGER.info("Writing state %s to %s", self.state, outfile)
-        self.gdf.to_parquet(
-            outfile,
-            engine="pyarrow",
-        )
-        LOGGER.info("Finished writing state %s", self.state)
-
-
-def main():
-    """Tile all of the states."""
     # Get the list of files to read
-    infiles = set([file[:-8] for file in os.listdir(PARQUET_DIR)])
-    donefiles = set([file[:-8] for file in os.listdir(TILED_CENSUS_DIR)])
-    zipfiles = [file + ".zip" for file in infiles.difference(donefiles)]
-    LOGGER.info("%s states to tile.", len(zipfiles))
+    infiles = set(os.listdir(PARQUET_DIR))
+    donefiles = set(os.listdir(TILED_CENSUS_DIR))
+    files_todo = infiles.difference(donefiles)
+    LOGGER.info("%s states to tile.", len(files_todo))
 
-    # Create the pool for multiprocessing
-    with cf.ProcessPoolExecutor(max_workers=int(mp.cpu_count() / 2)) as executor:
-        futures = [
-            executor.submit(methodcaller("tile_state"), tile_object)
-            for tile_object in [TileGeoData(zipfile) for zipfile in zipfiles]
-        ]
-        for future in cf.as_completed(futures):
-            if (exception := future.exception()):
-                LOGGER.error(exception)
-            result = future.result()
-            result.write_gdf()
+    # Process the data in parallel using Dask
+    (
+        dd.read_parquet([os.path.join(PARQUET_DIR, file) for file in files_todo])
+        .map_partitions(tile_partition)
+        .to_parquet(os.path.join(DATA_DIR, "all_tiled_tracts.parquet"))
+    )
 
 
 if __name__ == "__main__":

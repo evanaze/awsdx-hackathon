@@ -8,14 +8,6 @@ from shapely.geometry import mapping
 from config import (ZIP_DIR, PARQUET_DIR)
 
 
-def prepare_districts(gdf):
-    """Loads a geojson files of polygon geometries and features,
-    swaps the latitude and longitude andstores geojson"""    
-    return (gdf
-            .assign(geom_swap_geojson = lambda x: x["geometry"].map(lambda polygon: transform(
-                       lambda x, y: (y, x), polygon)).apply(lambda y: mapping(y)))
-            )
-
 def geodata_to_parquet() -> None:
     """Read the zipfiles and save to Parquet"""
     zipfiles = os.listdir(ZIP_DIR)
@@ -41,7 +33,6 @@ def geodata_to_parquet() -> None:
                 axis=1,
             )
             .rename({"INTPTLAT": "lat", "INTPTLON": "lon", "GEOID": "geoid"}, axis=1)
-            .pipe(prepare_districts)
             .to_parquet(outpath, engine="pyarrow")
         )
 
