@@ -5,7 +5,7 @@ from geopandas import read_file
 from shapely.ops import transform
 from shapely.geometry import mapping
 
-from app.config import (ZIP_DIR, PARQUET_DIR)
+from config import (ZIP_DIR, PARQUET_DIR)
 
 
 def prepare_districts(gdf):
