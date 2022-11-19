@@ -3,9 +3,10 @@ import os
 import h3
 import numpy as np
 import pandas as pd
-from dask_geopandas import read_parquet
 from shapely.ops import transform
 from shapely.geometry import mapping
+from dask.distributed import Client
+from dask_geopandas import read_parquet
 
 from logger import get_logger
 from config import PARQUET_DIR, TILED_CENSUS_DIR, DATA_DIR
@@ -54,6 +55,7 @@ def tile_partition(df: pd.DataFrame):
 
 def tile_geodata():
     """Tile the Geodata."""
+    client = Client(n_workers=8)
     # Get the list of files to read
     infiles = set(os.listdir(PARQUET_DIR))
     donefiles = set(os.listdir(TILED_CENSUS_DIR))
@@ -61,7 +63,7 @@ def tile_geodata():
     LOGGER.info("%s states to tile.", len(files_todo))
 
     # Process the data in parallel using Dask
-    (
+    return (
         read_parquet([os.path.join(PARQUET_DIR, file) for file in files_todo])
         .map_partitions(
             tile_partition,
@@ -73,8 +75,9 @@ def tile_geodata():
             },
         )
         .to_parquet(os.path.join(DATA_DIR, "all_tiled_tracts.parquet"))
-    ).compute()
+    )
 
 
 if __name__ == "__main__":
-    tile_geodata()
+    dd = tile_geodata()
+    dd.compute()
